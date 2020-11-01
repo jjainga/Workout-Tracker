@@ -3,5 +3,6 @@
 module.exports = {
     users: require("./users.js"),
     workout: require("./workout.js"),
-    cardio: require("./cardio.js")
+    cardio: require("./cardio.js"),
+    lifting: require("./lifting.js")
 };
