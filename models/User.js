@@ -19,19 +19,11 @@ const UserSchema = new Schema({
     last_name: {
         type: String
     },
-    workout: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: "workout"
-        }
-    ],
-    cardio: [
-        {
-            type:Schema.Types.ObjectId,
-            ref: "cardio"
-        }
-    ]
-})
+    workouts: [{
+        type: Schema.Types.ObjectId,
+        ref: "Workout"
+    }]
+});
 //creating the user model with the userschema
 const User = mongoose.model("User", UserSchema);
 //exporting the user model

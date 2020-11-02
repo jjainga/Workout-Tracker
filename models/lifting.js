@@ -1,6 +1,5 @@
 //requiring the mongoose package
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
 const LiftingSchema = new Schema({
@@ -8,7 +7,6 @@ const LiftingSchema = new Schema({
         type: String,
         required: true
     },
-    type: String,
     weight: {
         type: Number,
     },
@@ -17,6 +15,6 @@ const LiftingSchema = new Schema({
     restInterval: Number
 });
 
-const Lifting = mongoose.Schema("Lifting", LiftingSchema) 
+const Lifting = mongoose.model("Lifting", LiftingSchema) 
 
-module.exports = Lifting;
+module.exports = Lifting

@@ -1,8 +1,7 @@
 // exporting object that contains all models
-
 module.exports = {
-    users: require("./users.js"),
-    workout: require("./workout.js"),
-    cardio: require("./cardio.js"),
-    lifting: require("./lifting.js")
+    users: require("./User.js"),
+    workout: require("./Workout.js"),
+    lifting: require("./Lifting"),
+    cardio: require("./Cardio.js")
 };
